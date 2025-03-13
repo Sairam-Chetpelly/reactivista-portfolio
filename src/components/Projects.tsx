@@ -48,7 +48,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-24 bg-gray-50">
-      <div className="container mx-auto px-6" ref={ref}>
+      <div className="container mx-auto px-6" ref={ref as React.RefObject<HTMLDivElement>}>
         <div className={`text-center max-w-2xl mx-auto mb-16 transition-all duration-700 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <span className="inline-block py-1 px-3 mb-3 text-xs font-medium bg-primary/10 text-primary rounded-full">
             My Work

@@ -30,7 +30,7 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left column with image */}
-          <div className="relative" ref={ref}>
+          <div className="relative" ref={ref as React.RefObject<HTMLDivElement>}>
             <div className={`absolute -top-5 -left-5 w-24 h-24 bg-primary/10 rounded-xl transition-opacity duration-700 ${isInView ? 'opacity-100' : 'opacity-0'}`}></div>
             <div className={`absolute -bottom-5 -right-5 w-32 h-32 bg-blue-400/10 rounded-xl transition-opacity duration-700 delay-200 ${isInView ? 'opacity-100' : 'opacity-0'}`}></div>
             <div className={`relative z-10 rounded-xl overflow-hidden shadow-card subtle-border aspect-square transition-all duration-700 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
